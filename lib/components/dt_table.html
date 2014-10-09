@@ -1,0 +1,24 @@
+<link rel="import" href="../../../packages/polymer/polymer.html">
+
+<polymer-element name='dt-table'>
+	<template>
+		<style>
+			:host {
+				display: block;
+			}
+		</style>
+		<table>
+			<thead>
+				<tr>
+					<th template repeat="{{column in dataTable.columns}}">{{column}}</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr template repeat="{{data in dataTable.data}}">
+					<td template repeat="{{dataElement in data}}">{{dataElement}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</template>
+	<script type='application/dart' src='dt_table.dart'></script>
+</polymer-element>

@@ -1,0 +1,12 @@
+name: dart_datatables
+version: 0.0.1
+author: Dieter Hubau <dhubau@gmail.com>
+description: Datatables for Dart
+homepage: http://github.com/Turbots/dart-datatables
+documentation: http://github.com/Turbots/dart-datatables
+dependencies:
+  polymer: any
+transformers:
+- polymer:
+    entry_points:
+    - web/index.html
